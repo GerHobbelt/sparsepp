@@ -118,7 +118,7 @@ void test(std::size_t iterations, std::size_t container_size)
 
 }
 
-int main()
+int main(void)
 {
     std::size_t iterations = 100000;
 

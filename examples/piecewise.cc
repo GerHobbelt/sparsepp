@@ -5,7 +5,7 @@
 
 #include <sstream>
 
-int main()
+int main(void)
 {
     using StringPtr = std::unique_ptr<std::string>;
 

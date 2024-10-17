@@ -29,7 +29,7 @@ private:
     std::string value;
 };
 
-int main() 
+int main(void) 
 {
     spp::sparse_hash_map<std::string, A> m;
 

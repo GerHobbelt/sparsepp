@@ -136,7 +136,7 @@ struct Hasher_32 {
     }
 };
 
-int main() 
+int main(void) 
 {
 #if SPP
     spp::sparse_hash_map<int, int /*, Hasheri32 */> s;

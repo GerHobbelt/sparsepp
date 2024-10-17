@@ -7,7 +7,7 @@ auto bar() {
 	return std::make_tuple(3, 4.5, "Some string");
 }
 
-int main()
+int main(void)
 {
 	auto[c, d, e] = bar();
 	std::cout << "c: " << c << ", d: " << d << ", e: " << e << "\n";

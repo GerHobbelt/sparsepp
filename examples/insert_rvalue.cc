@@ -10,7 +10,7 @@ std::unique_ptr<T> make_unique(Args&&... args)
     return std::unique_ptr<T>(new T(std::forward<Args>(args)...));
 }
 
-int main()
+int main(void)
 {
     using Key = std::unique_ptr<std::string>;
     using Value = std::unique_ptr<std::string>;

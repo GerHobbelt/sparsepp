@@ -28,7 +28,7 @@ For a detailed comparison of various hash implementations, including Sparsepp, p
 
 using spp::sparse_hash_map;
  
-int main()
+int main(void)
 {
     // Create an unordered_map of three strings (that map to strings)
     sparse_hash_map<std::string, std::string> email = 
@@ -133,7 +133,7 @@ In order to use the custom spp allocator, define the following preprocessor vari
        size_t operator()(uint32_t k) const { return (k ^ 2166136261U)  * 16777619UL; }
    };
    
-   int main() 
+   int main(void) 
    {
        spp::sparse_hash_map<uint64_t, double, Hash64> map;
        ...
@@ -181,7 +181,7 @@ namespace std
     };
 }
  
-int main()
+int main(void)
 {
     // As we have defined a specialization of std::hash() for Person, 
     // we can now create sparse_hash_set or sparse_hash_map of Persons
